@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+:root{
+    --main-bg-color:rgb(15, 117, 206);
+}
+.progress {
+    background-color: rgb(30, 168, 227);
+    height: 3px;
+    animation: load 1s ease-in-out 1;
+}
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 90vw;
+    }
+
+    100% {
+        width: 100vw;
+       
+    }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+nav{
+    display: flex;
+}
+nav ul  {
+    display: flex;
+    justify-items: start;
+    align-items: center;
+    height: 12vh;
+  
+}
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+  
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "PT Serif", serif;
+  
+}
+nav ul li a:hover {
+    color: #521919;
+    text-decoration: underline;
+    font-family: "PT Serif", serif;
+    font-style: bold;
+    font-weight: bolder;
+  
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo img{
+    width: 129px;
+    padding: 8px;
+
+}
+.searchbox{
+    display: flex;
+    align-items:center ;
+}
+.searchbox input{
+    width: 30vw;
+    height: 6vh;
+    border-radius: 5px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px ;
+}
+.searchbox button:hover{
+    font-family: "PT Serif", serif;
+    background-color: #ffffff;
+    color: black;
+  
+}
+
+header {
+  
+  background-color: var(--main-bg-color);
+  color: white;
+  border: 2px solid rgb(34, 120, 177);
+}
+body{
+    /* height: 90vh; */
+    background-color: #ffffff;
+}
+/* .container{
+    height: calc(100vh - 58px - 12vh);
+} */
+.slider{
+    overflow: hidden;
+    margin: auto;
+}
+
+.slider img{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 12px auto;
+    height: 40vh;
+}
+.card h2{
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: hidden;
+}
+.card{
+    background-color: #ffffff;
+    max-width: 90vw;
+    margin: auto;
+    padding: 10px;
+}
+.card-item{
+    background-color: rgb(242, 240, 237);
+    width: 12vw;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 1px rgb(158, 162, 165);
+    /* border: 2px solid black; */
+    margin: 0 10px;
+}
+.card-item:hover{
+    background-color: rgb(220, 217, 213);
+    box-shadow: 2px 2px 2px 2px rgb(158, 162, 165);
+   
+}
+
+footer {
+    height: 12vh;
+    /* width: 100vw ; */
+    background-color: var(--main-bg-color);
+    color: #ffffff;
+    font-family: "PT Serif", serif;
+  }
+  
